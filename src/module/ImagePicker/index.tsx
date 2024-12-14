@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import './index.css';  
 // import SvgHiHeart from "../../assets/SvgHiHeart";
@@ -78,12 +78,12 @@ const CameraAccess: React.FC<CameraAndImageGridProps> = () => {
     setIsCameraOpen(false); 
   };
 
-  useEffect(() => {
-    if (selectedImages.length >= 2) {
+//   useEffect(() => {
+//     if (selectedImages.length >= 2) {
      
-      handleCloseCamera();
-    }
-  },[selectedImages]);
+//       handleCloseCamera();
+//     }
+//   },[selectedImages]);
 
   
   const handleImageSelect = (image: string) => {
