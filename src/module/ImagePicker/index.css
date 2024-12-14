@@ -1,0 +1,150 @@
+/* Container for the whole component */
+.imgepicker-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 16px;
+  }
+  
+  /* Camera section */
+  .imgepicker-camera-container {
+    flex: 1;
+    background-color: #D9D9D99C;
+    border-radius: 10px;
+  }
+  .imagepicker-lable-top{
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+ 
+  .imgepicker-capture-button {
+    margin-top: 2px;
+    padding: 10px 0px;
+    color: #000;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+    width: fit-content;
+    background-color: #fff;
+  }
+  .imgepicker-capture-button-close{
+    /* margin-top: 10px; */
+    padding: 0px 0px 6px;
+    color: #000;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+    width: fit-content;
+    background-color: #fff;
+  }
+  
+  /* Save button container */
+  .imgepicker-save-button-container {
+    padding: 20px 0px;
+    /* background-color: #f0f0f0; */
+  }
+  
+  
+  .imgepicker-save-button {
+    padding: 10px 20px;
+    background-color: #000f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 36px;
+    width: 100%;
+  }
+  .imgepicker-navigation-button{
+    display: flex
+    ;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        color: #000000;
+        border: none;
+        /* padding: 10px 16px; */
+        border-radius: 8px;
+        font-size: 14px;
+        width: 100%;
+        /* position: fixed; */
+        /* flex-direction: column; */
+        padding-bottom: 10px;
+    
+  }
+  
+ 
+  .imgepicker-image-grid-container {
+    flex: 1;
+    /* padding: 0px 20px; */
+    /* background-color: #f0f0f0; */
+    overflow-y: auto;
+  }
+  .imgepicker-capture-button-icons{
+    display: flex;
+    gap:4px;
+    align-items: center;
+  }
+  
+  
+  .imgepicker-file-input-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  
+  .imgepicker-file-input {
+    display: none;
+  }
+  
+  
+  .imgepicker-file-input-label {
+    background-color: transparent;
+    color: #000;
+    /* padding: 10px 20px;
+    border-radius: 5px; */
+    cursor: pointer;
+    /* text-align: center;
+    display: inline-block; */
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  
+  
+  
+  .imgepicker-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    padding-top: 10px;
+  }
+  
+ 
+  .imgepicker-image-item {
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+ 
+  .imgepicker-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  
+  .imgepicker-image.selected {
+    border: 2px solid #007bff;
+  }
+  

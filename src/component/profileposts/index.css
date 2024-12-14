@@ -1,0 +1,35 @@
+.profile-zigzag-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-profilelayer {
+  /* background-color: #f1f1f1; */
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-profileimg {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.profile-profilelayer.left {
+  height: 150px;
+  align-self: flex-start;
+}
+
+.profile-profilelayer.right {
+  height: 150px;
+  align-self: flex-end;
+  margin-top: 14px;
+}

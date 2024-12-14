@@ -1,0 +1,193 @@
+.signup-overall-zigzag-container {
+  width: 100%;
+  position: relative
+}
+
+.signup-zigzag-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+
+
+.signup-layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: lightgrey;
+
+}
+
+.signup-but-signup {
+  padding: 12px 19px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #000;
+  color: #ffff;
+  border-radius: 37px;
+  border: 0px;
+}
+
+
+.signup-layer1 {
+  background-color: #FFDDC1;
+  height: 100px;
+  margin-top: 8px;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.signup-layer2 {
+  background-color: #C1F0F6;
+  height: 120px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+
+.signup-layer3 {
+  background-color: #D4E157;
+  height: 140px;
+}
+
+.signup-layer:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.signup-bottom-container {
+  background-color: #FFFFFF;
+  border-top-left-radius: 63px;
+  border-top-right-radius: 63px;
+  position: fixed;
+  /* top: 65%; */
+  width: 100%;
+  /* height: 37%; */
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 0px 30px 0px;
+  bottom: 0px;
+
+}
+
+@media (max-width: 767px) {
+  .signup-layer1 {
+    background-color: #FFDDC1;
+    height: 100px;
+    margin-top: 8px;
+  }
+
+  .signup-layer2 {
+    background-color: #C1F0F6;
+    height: 120px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .signup-layer3 {
+    background-color: #D4E157;
+    height: 140px;
+  }
+
+  .signup-bottom-container img {
+    height: 34px;
+    width: 46px;
+  }
+
+  .signup-bottom-container p {
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+  }
+
+  .signup-bottom-container-txt {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 20px;
+    /* font-family: "Kumbh Sans"; */
+  }
+
+  .signup-bottom-container-logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .signup-layer1 {
+    background-color: #FFDDC1;
+    height: 200px;
+    margin-top: 8px;
+  }
+
+  .signup-layer2 {
+    background-color: #C1F0F6;
+    height: 220px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+
+  .signup-layer3 {
+    background-color: #D4E157;
+    height: 240px;
+  }
+
+  .signup-bottom-container {
+    background-color: #FFFFFF;
+    border-top-left-radius: 63px;
+    border-top-right-radius: 63px;
+    position: fixed;
+    /* top: 65%; */
+    width: 100%;
+    /* height: 37%; */
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 0px 30px 0px;
+    bottom: 0px;
+
+  }
+
+  .signup-bottom-container img {
+    height: 64px;
+    width: 86px;
+  }
+
+  .signup-bottom-container p {
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+  }
+
+  .signup-bottom-container-logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .signup-bottom-container-txt {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 20px;
+    /* font-family: "Kumbh Sans"; */
+  }
+}

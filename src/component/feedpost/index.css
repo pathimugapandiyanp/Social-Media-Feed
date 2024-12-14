@@ -1,0 +1,127 @@
+.feed-layout-overall-container {
+  padding: 16px;
+  background-color: #fdf5e6;
+  border-radius: 26px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 16px auto;
+  max-width: 600px;
+  font-family: 'Arial', sans-serif;
+}
+
+.feed-layout-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.feed-profile-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.feed-layout-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed-welcome-text {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 600;
+  margin: 0;
+}
+
+.feed-user-name {
+  font-size: 10px;
+  font-weight: 400;
+  color: #00000054;
+  margin: 0;
+}
+
+.feed-post-content {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.feed-post-media-container {
+  margin-top: 12px;
+  display: flex;
+  overflow-x: auto; /* Make the container scrollable horizontally */
+  gap: 8px;
+  scroll-behavior: smooth;
+  justify-content: flex-start; /* Align images to the left */
+  padding-bottom: 12px;
+}
+
+.feed-post-media-container.single-image {
+  justify-content: center; /* Center the images when there's only one */
+}
+
+.feed-post-images-scrollable {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start; /* Ensure images align to the left */
+  flex-wrap: nowrap; /* Prevent wrapping if you want all images on a single line */
+}
+
+.feed-post-images-scrollable.single-image {
+  justify-content: center; /* Center if there's only one image */
+}
+
+.feed-post-media {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0; /* Prevent image from shrinking */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.feed-post-media-share {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.but-heart {
+  color: #D95B7F;
+  font-size: 12px;
+  font-family: 600;
+}
+
+.but-heart-overview {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.Button-sharpost {
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 7px 20px;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.feed-post-media-container::-webkit-scrollbar {
+  height: 0px; /* Hide scrollbar */
+}
+
+.feed-post-media-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar thumb color */
+  border-radius: 4px;
+}
+
+.feed-post-media-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Scrollbar track color */
+}
