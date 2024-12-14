@@ -16,7 +16,7 @@ const ProfileScreen = () => {
 
   
   const profile = useSelector((state: RootState) => state.profile);
-  const { usersPost } = useSelector((state: RootState) => state.names);
+  // const { usersPost } = useSelector((state: RootState) => state.names);
 
   useEffect(() => {
     dispatch(fetchProfileFromFirestore()); 

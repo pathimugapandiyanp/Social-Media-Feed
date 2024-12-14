@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import './index.css';  
-import SvgHiHeart from "../../assets/SvgHiHeart";
-import NavigationButton from "../../component/backforwardscreen";
+// import SvgHiHeart from "../../assets/SvgHiHeart";
+// import NavigationButton from "../../component/backforwardscreen";
 import SvgHiArrowSmLeft from "../../assets/SvgHiArrowSmLeft";
 import SvgCamera from "../../assets/SvgCamera";
 import SvgFolder from "../../assets/SvgFolder";
@@ -83,7 +83,7 @@ const CameraAccess: React.FC<CameraAndImageGridProps> = () => {
      
       handleCloseCamera();
     }
-  }, [selectedImages]);
+  },[selectedImages]);
 
   
   const handleImageSelect = (image: string) => {

@@ -5,7 +5,7 @@ import HomeFeedScreen from '../module/HomeFeedScreen'
 import ProfileScreen from '../module/ProfileScreen'
 import EditProfileScreen from '../module/EditProfileScreen'
 import CreatePostScreen from '../module/CreatePostScreen'
-import ProtectedLayout from './productedRoute'
+// import ProtectedLayout from './productedRoute'
 import CameraAccess from '../module/ImagePicker'
 const MainComponent: React.FC = () => {
   return (

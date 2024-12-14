@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react'
 import './index.css'
 import { mockData } from './mock'
 import Button from '../../component/button'
-import SvgVector from '../../assets/Vector'
+// import SvgVector from '../../assets/Vector'
 import { auth, provider } from '../../firebase/config'
 import { signInWithPopup } from 'firebase/auth'
-import CreatePostScreen from '../CreatePostScreen'
+// import CreatePostScreen from '../CreatePostScreen'
 import HomeFeedScreen from '../HomeFeedScreen'
 
 
@@ -55,7 +55,7 @@ const SignUp = () => {
 
           <div className="signup-bottom-container">
             <div className="signup-bottom-container-logo">
-              <img src={"https://i.ibb.co/h8QXhDC/2de875e6142d3dde26f7cea380c77837-1.png"} alt="IMage" height={"34"} width={"46"} />
+              <img src={"https://i.ibb.co/h8QXhDC/2de875e6142d3dde26f7cea380c77837-1.png"} alt="Pic" height={"34"} width={"46"} />
               <p>Vibesnap</p>
             </div>
             <div className="signup-bottom-container-txt">Moments That Matter, Shared Forever.</div>

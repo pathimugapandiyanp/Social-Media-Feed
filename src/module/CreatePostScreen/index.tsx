@@ -61,24 +61,7 @@ const CreatePostScreen: React.FC = () => {
   };
 
  
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = e.target.files;
-    if (files) {
-      const newImages: (string | ArrayBuffer | null)[] = [];
-      Array.from(files).forEach((file) => {
-        const reader = new FileReader();
-        reader.onloadend = () => {
-          newImages.push(reader.result);
-          setImages((prevImages) => {
-            const updatedImages = [...prevImages, ...newImages];
-            localStorage.setItem('postImages', JSON.stringify(updatedImages)); 
-            return updatedImages;
-          });
-        };
-        reader.readAsDataURL(file);
-      });
-    }
-  };
+ 
 
   const handleBack = () => {
     navigate(-1);

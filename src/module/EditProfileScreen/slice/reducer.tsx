@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { doc, getDoc, setDoc, DocumentData } from 'firebase/firestore';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
 import db from '../../../firebase/config';
 
 interface ProfileState {

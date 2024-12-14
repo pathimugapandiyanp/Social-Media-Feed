@@ -29,7 +29,7 @@ const ProfilePostes = () => {
             {post.data.validImages?.length > 0 && (
               <img
                 src={post.data.validImages[0]}  
-                alt={`Post Image ${index}`}
+                alt="testimg"
                 className="profile-profileimg"
               />
             )}

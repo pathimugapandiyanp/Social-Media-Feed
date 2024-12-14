@@ -48,7 +48,7 @@ const FeedPost: React.FC<FeedPostProps> = ({ usersPost }) => {
      
       window.open(facebookUrl, '_blank', 'width=600,height=400');
       
-      // window.open(twitterUrl, '_blank', 'width=600,height=400');
+       window.open(twitterUrl, '_blank', 'width=600,height=400');
     }
   };
 
@@ -97,7 +97,7 @@ const FeedPost: React.FC<FeedPostProps> = ({ usersPost }) => {
                   <img
                     key={imgIndex}
                     src={imageSrc}
-                    alt={`Post Image ${imgIndex}`}
+                    alt="test"
                     className="feed-post-media"
                   />
                 ))}

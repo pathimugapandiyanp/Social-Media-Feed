@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './index.css';
 import FeedPost from '../../component/feedpost';
-import Button from '../../component/button';
 import SvgVector from '../../assets/Vector';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -22,7 +21,7 @@ interface PostResponse {
 
 const HomeFeedScreen = () => {
   const navigate = useNavigate();
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
   const dispatch = useDispatch<AppDispatch>();
   const profile = useSelector((state: any) => state.profile); 
 
